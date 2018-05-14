@@ -39,6 +39,13 @@ class Main extends PluginBase {
 	
 	private static $api;
 	
+	public $projectiles = array(
+	  "Arrow",
+	  "Snowball",
+	  "Egg"
+		
+	);
+	
 	public function onLoad() {
 		self::$api = $this;
 		
@@ -80,6 +87,22 @@ class Main extends PluginBase {
 		$item->addEnchantment($enchantment);
 		$player->getInventory()->addItem($item);
 		
+	}
+	
+	/**
+	* @var string $projectile
+	* @return bool
+	*/
+	
+	public function isProjectile(string $projectile): bool {
+		if(in_array($projectile, $this->projectiles)) {
+			return true;
+			
+		}else{
+			return false;
+		
+		}
+	
 	}
 	
 }
