@@ -74,7 +74,7 @@ class Main extends PluginBase {
 	
 	public function addSpecialBow(Player $player) {
 		$item = Item::get(261, 2, 1);
-		$item->setCustomName("§cSpecial Teleport Bow");
+		$item->setCustomName("§r§cSpecial Teleport Bow");
 		$enchantment = Enchantment::getEnchantment(0);
 		$enchantment = new EnchantmentInstance($enchantment, 0);
 		$item->addEnchantment($enchantment);
