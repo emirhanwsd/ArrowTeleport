@@ -7,7 +7,7 @@ use pocketmine\event\entity\ProjectileHitEvent;
 
 use pocketmine\Player;
 
-use pocketmine\entity\projectile\{Arrow, Egg, Snowball;
+use pocketmine\entity\projectile\{Arrow, Egg, Snowball};
 
 use pocketmine\level\Level;
 use pocketmine\level\sound\EndermanTeleportSound;
