@@ -28,6 +28,8 @@ class ArrowTeleportCommand extends Command {
 	* @return bool
 	*/
 	
+	// TODO: Add price
+	
 	public function execute(CommandSender $sender, string $label, array $args): bool {
 		if($sender instanceof Player) {
 			if(empty($args[0])) {
