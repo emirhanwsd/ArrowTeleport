@@ -68,6 +68,7 @@ class Main extends PluginBase {
 		$this->saveResource("messages.yml");
 		$this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
 		$this->getServer()->getCommandMap()->register("arrowteleport", new ArrowTeleportCommand());
+		$this->sendConsoleMessages();
 		
 	}
 	
@@ -103,6 +104,12 @@ class Main extends PluginBase {
 			return false;
 		
 		}
+	
+	}
+	
+	public function sendConsoleMessages() {
+		$this->getLogger()->info("§bArrowTeleport §aenabled by EmirhanWSD");
+		$this->getLogger()->notice("§cIf you set projectile on config to other projectile or other items name, this plugin will not work.");
 	
 	}
 	
