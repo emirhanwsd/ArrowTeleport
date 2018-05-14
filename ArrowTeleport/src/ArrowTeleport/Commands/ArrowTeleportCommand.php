@@ -35,6 +35,7 @@ class ArrowTeleportCommand extends Command {
 			if(empty($args[0])) {
 				Main::getAPI()->addSpecialBow($sender);
 				$sender->sendMessage(Main::PREFIX.Main::getAPI()->config->get("added-your-inventory"));
+				$sender->sendMessage("§l§cNOTE: §r§7It bow works if you set projectile to Arrow on config.");
 				
 			}else{
 				switch($args[0]) {
