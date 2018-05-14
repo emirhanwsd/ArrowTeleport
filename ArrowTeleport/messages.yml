@@ -1,0 +1,10 @@
+---
+price-enable: false
+price: 1000
+player-not-found: §cPlayer not found.
+added-your-inventory: §aSpecial bow added your inventory.
+added-x-inventory: §aAdded special bow to §b{player}§a's inventory.
+x-added-your-inventory: §b{sender} §aadded special bow to your inventory.
+usage-message: '§cUsage : §7/arrowteleport give <player-name>'
+you-must-be-op: §cYou must be op for use this command.
+...
