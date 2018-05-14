@@ -20,7 +20,7 @@ class EventListener implements Listener {
 		$entity = $e->getEntity();
 		if($entity instanceof Arrow) {
 			if(Main::getAPI()->config->get("projectile") == "Arrow") {
-				$player = $arrow->getOwningEntity();
+				$player = $entity->getOwningEntity();
 				if($player instanceof Player) {
 					$player->teleport($entity);
 					$sound = new EndermanTeleportSound($player);
@@ -38,7 +38,7 @@ class EventListener implements Listener {
 		$entity = $e->getEntity();
 		if($entity instanceof Egg) {
 			if(Main::getAPI()->config->get("projectile") == "Egg") {
-				$player = $arrow->getOwningEntity();
+				$player = $entity->getOwningEntity();
 				if($player instanceof Player) {
 					$player->teleport($entity);
 					$sound = new EndermanTeleportSound($player);
@@ -56,7 +56,7 @@ class EventListener implements Listener {
 		$entity = $e->getEntity();
 		if($entity instanceof Snowball) {
 			if(Main::getAPI()->config->get("projectile") == "Snowball") {
-				$player = $arrow->getOwningEntity();
+				$player = $entity->getOwningEntity();
 				if($player instanceof Player) {
 					$player->teleport($entity);
 					$sound = new EndermanTeleportSound($player);
