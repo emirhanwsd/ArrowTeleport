@@ -1,2 +1,2 @@
 # ArrowTeleport v1.0
-ArrawTeleport plugin for Altay
+ArrowTeleport plugin for Altay
