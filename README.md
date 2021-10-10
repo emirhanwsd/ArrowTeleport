@@ -1,2 +1,2 @@
 # ArrowTeleport v1.0
-ArrowTeleport plugin for Altay
+ArrowTeleport plugin for @pmmp
